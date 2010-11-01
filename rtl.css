@@ -1,0 +1,466 @@
+/*
+THEME NAME: Fall08 - Hebrew
+THEME URI: http://www.mushon.com/fall08
+DESCRIPTION: Academic Collaborative blog (child of Thematic)
+VERSION: 1.6
+AUTHOR: <a href=\"http://www.Shual.com/\">Mushon Zer-Aviv</a>
+AUTHOR URI: http://www.mushon.com/
+TEMPLATE: thematic
+TAGS: Thematic, academic, sandbox, microformats, hcard, hatom, xoxo, widgets, blank slate, starter theme, minimalist, developer
+*/
+/* @import url(\'styles/fall08.css\'); */
+/*********************************
+**********************************
+  FALL 08
+   * Filename:        fall08.css   
+**********************************/
+@import url('rtl-extra.css');
+
+/* ---------------------------------------------------------------- General */
+
+#wrapper {
+	text-align: right;
+}
+
+h2 {
+	margin:10px 110px 0 0;
+}
+
+blockquote {
+  font-family:auto;
+  font-size:1.2em;
+}
+
+/* ---------------------------------------------------------------- Header */
+
+#log {
+	text-align: right;
+}
+
+#log div {
+	float: left;
+}
+
+#log div span.log-name {
+	margin: 10px 17px 0 0;
+	float: right;
+}
+
+span.log-in-out a {
+	margin: 10px 0px 0 0;
+	float: right;
+}
+
+#header {
+	margin: 20px 110px 0px 10px;
+}
+
+#search {
+	margin-right: 770px;
+	margin-left: auto;
+}
+
+.sidebars #search {
+	margin-right: 0px;
+	margin-left: auto;
+}
+
+#search input.button {
+	margin-right: 185px;
+	margin-left: auto;
+}
+
+.sf-menu {
+	margin-right: 110px;
+	margin-left: auto;
+}
+
+.sf-menu li {
+  margin-left: 10px;
+  margin-right: auto;
+}
+
+.sf-menu a {
+	float: right;
+	margin-left: 10px;
+	margin-right: auto;
+}
+
+.sf-menu li ul {
+	right:-999em;
+	left: auto;
+}
+
+.sf-menu li:hover ul {
+	right:auto;
+	left: auto;
+}
+
+/* ---------------------------------------------------------------- Content */
+
+div#content {
+	margin-left: 10px;
+	float: right;
+	margin-right: auto;
+}
+
+.navigation {
+	margin: 0 110px 0 0;
+}
+
+h1.page-title {
+  margin:10px 110px 0 0;
+}
+/* ---------------------------------------------------------------- Post */
+
+div.post-head .entry-title {
+	float:left;
+}
+
+div.entry-content {
+	float:left;
+	margin-right: 10px;
+	margin-left: auto;
+}
+
+div.entry-content div {
+	margin-right: 10px;
+	margin-left: auto;
+}
+
+div.entry-content div.wp-caption {
+	margin-right: 0;
+	margin-left: auto;
+}
+
+div.entry-content h1,
+div.entry-content h2 {
+/*
+	padding-right:0px;
+	padding-left: 0;
+*/
+}
+
+div.entry-content div.PDS_Poll,
+div.entry-content div.PDS_Poll div {
+	margin-right: 0px;
+	margin-left: auto;
+}
+
+div.entry-content div.gallery {
+	margin-right: 0;
+	margin-left: auto;
+}
+
+div.entry-content div.wp_syntax,
+div.entry-content div.wp_syntax div {
+	margin-right: 0px;
+	margin-left: auto;
+}
+
+a.author-img {
+	margin: 0 55px 5px 0;
+	text-align: left;
+}
+
+div.entry-utility .edit-link a {
+	padding-left: 17px;
+	padding-right: 0;
+}
+
+div.entry-utility {
+	float: left;
+}
+
+div.entry-utility,
+div.comment-meta {
+	text-align: left;
+}
+
+div.entry-utility .cat-links a {
+	padding-left: 17px;
+	padding-right: 0;
+}
+
+div.entry-utility .tag-links a {
+	padding-left: 17px;
+	padding-right: 0;
+}
+
+div.entry-utility .comments-link a {
+	background-position: left;
+	padding-left: 17px;
+	padding-right: 0;
+}
+
+div.entry-utility .comfeed-link a {
+	background-position: left;
+	padding-left: 17px;
+	padding-right: 0;
+}
+
+/*for podcasts video*/
+
+/* Similar Posts */
+
+/* ---------------------------------------------------------------- Comments */
+
+div.comments > h3 {
+	margin-right: 110px;
+	margin-left: auto;
+}
+
+div#respond {
+	margin-right: 110px;
+	margin-left: auto;
+}
+
+div#respond h3 {
+	margin-right: 0;
+	margin-left: auto;
+}
+
+div#respond .formcontainer {
+	margin-right: 0;
+	margin-left: auto;
+}
+
+div#trackbacks-list ol,
+div#comments-list ol {
+	margin: 0 110px 0 0;
+}
+
+ol div#respond {
+	padding-right:33px;
+	padding-left: 0;
+	background-position:98.7% 50%;
+}
+
+div#comments .children div#respond {
+	background-position:98.2% 50%;
+}
+
+li.comment div#respond {
+	margin-right: 37px;
+	margin-left: auto;
+}
+
+div.comment-meta {
+	text-align: right;
+}
+
+div.comment-author {
+	float: left;
+}
+
+div.comment-meta img {
+	float: right;
+	margin-left: 10px;
+	margin-right: auto;
+}
+
+div.comment-meta img:hover {
+	margin: -11px -11px -11px 0px;
+}
+
+div.comment-meta span.fn {
+	float: right;
+}
+
+div.comment-meta span.date {
+	float: right;
+}
+
+div.comment-meta span.edit-comment {
+	float: left;
+}
+
+div#trackbacks-list div.comment-body,
+div#comments-list div.comment-body {
+	margin-right: 34px;
+	margin-left: auto;
+}
+
+div.formcontainer {
+	margin-right: 115px;
+	margin-left: auto;
+}
+
+div.formcontainer textarea#comment {
+	padding-right:5px;
+	padding-left: 0;
+}
+
+div#comments span.unapproved {
+	margin-right: 110px;
+	margin-left: auto;
+}
+
+div#comments p#login-req {
+	margin-right: 110px;
+	margin-left: auto;
+}
+
+div#comments div.comment-reply-link {
+	margin-right:10px;
+	padding-right:29px;
+	padding-left: 0;
+	margin-left: auto;
+}
+
+div#comments .children li {
+	margin-right:12px;
+	padding: 0px 26px 0 0;
+	margin-left: auto;
+}
+
+/* ---------------------------------------------------------------- Sidebars */
+
+div.aside h3 {
+	margin: 0 55px 10px 0;
+}
+
+div.aside {
+	float: right;
+}
+
+/* Primary Sidebar */
+
+div.aside li a.feed-icon {
+	float:right;
+	margin:19px 23px 0 0;
+}
+
+div.aside li#latest-posts h3,
+div.aside li#latest-comments h3 {
+	margin-right: 8px;
+	float: right;
+	margin-left: auto;
+}
+
+div.aside ul ul li {
+	margin: 0 23px 3px 0;
+}
+
+div.aside ul ul li a img {
+	border-left: 10px #eee solid;
+	float: right;
+	border-right: none;
+}
+
+div.aside ul ul li a:hover img {
+	margin-left: 5px;
+	border-left: 0;
+	border-right: 5px solid #eee;
+	margin-right: auto;
+}
+
+div.aside ul ul li a.trackback {
+	margin-right: 32px;
+	margin-left: auto;
+}
+
+div.aside li.widget_tag_cloud div {
+	margin: 0 60px 10px 0;
+}
+
+#primary .widget_rss ul {
+	margin-right: 35px;
+	margin-left: auto;
+}
+
+div#primary li.widget_rss li cite {
+	float: right;
+}
+
+div#primary li.widget_rss li a {
+	float: left;
+	text-align: left;
+}
+
+/* Secondary Sidebar */
+
+div#secondary {
+	float: right;
+	margin-left: 10px;
+	margin-right: auto;
+}
+
+div#secondary h3.widgettitle {
+	margin-right: 27px;
+	margin-left: auto;
+}
+
+div#secondary ul ul li {
+	margin:0 23px 3px 0;
+}
+
+/* Visualizeus */
+
+li#visualizeus {
+	margin-right: 10px;
+	margin-left: auto;
+}
+
+#visualizeus h3 {
+	margin-right: 45px;
+	margin-left: auto;
+}
+
+li#visualizeus a {
+	float: right;
+	margin: 0 10px 10px 0;
+}
+
+/* Thirdly Sidebar */
+
+div#thirdly {
+	float: right;
+}
+
+div#thirdly ul ul li {
+	margin:0 0px 3px 0;
+}
+
+/* ---------------------------------------------------------------- Footer */
+
+/* ---------------------------------------------------------------- Extra */
+/*Stats*/
+
+div.aside ul li ul li a.stats-link {
+	margin:-22px 173px 0 0;
+}
+
+/********************************************************* Old stuff starts here */
+
+/* Just some example content */
+div.skip-link {
+	left:1em;
+	right: auto;
+}
+
+.alignleft,img.alignleft {
+	float:left;
+	margin:1em 1em 0 0;
+}
+
+.alignright,img.alignright {
+	float:right;
+	margin:1em 0 0 1em;
+}
+
+div.navigation div.nav-next {
+	float:left;
+	text-align:left;
+}
+
+div.aside ul ul ul {
+	margin:0 0.5em 0 0;
+}
+
+div#menu ul li,div.gallery dl,div.navigation div.nav-previous {
+	float:right;
+}
+
+
+/* Generated by the RTLer - http://wordpress.org/extend/plugins/rtler/ */

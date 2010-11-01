@@ -1,0 +1,37 @@
+/*
+Additional RTL CSS hacks  
+-------------------------------------------------------------- */
+
+#log {
+  background-position: 642px 50%;
+}
+
+div.entry-utility .tag-links a,
+div.entry-utility .cat-links a,
+div.entry-utility .comments-link a,
+div.entry-utility .edit-link a
+{
+  background-position: 0 3px;
+}
+
+div#comments-list .comment{
+  background-position: 98.7% 50%;
+}
+
+div#comments div.comment-reply-link{
+  background-position: right 7px;
+}
+
+div#comments .children li {
+  background-position:93% 0;
+}
+
+div#comments .children li.depth-3 {
+  background-position:92.5% 0;
+}
+
+
+/* Shadowbox hack */
+#sb-body img {
+  margin-right:-100%;
+}
