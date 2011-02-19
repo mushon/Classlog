@@ -68,6 +68,16 @@ add_action('thematic_belowheader','childtheme_header_extension');
 
 // ---------------------------------------------------------------- Post Structure
 
+// Make the default index loop show excerpts
+function classlog_content() {
+  if(is_home()){
+    //return 'excerpt';
+	} elseif (is_author()) {
+		return 'full';
+	}
+}
+add_filter('thematic_content','classlog_content');
+
 
 // Removing Thematic's Postmeta
 function classlog_postheader_postmeta(){
@@ -189,6 +199,13 @@ update_option( 'sidebars_widgets', array(
 
 // ---------------------------------------------------------------- Adding theme options
 
+// ----------------------------------------------------------------- OEmbed
+
+// Add Slideshare oEmbed
+function add_oembed_slideshare(){
+    wp_oembed_add_provider( 'http://www.slideshare.net/*', 'http://api.embed.ly/v1/api/oembed');
+}
+add_action('init','add_oembed_slideshare');
 
 // ----------------------------------------------------------------- Plugins
 
