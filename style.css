@@ -85,6 +85,11 @@ p img.alignnone{
 
 code, pre{
   direction: ltr;
+  text-align: left;
+}
+
+.gist .highlight{
+	background: none;
 }
 
 /* ---------------------------------------------------------------- Header */
@@ -209,8 +214,8 @@ span.log-in-out a:hover{
 }
 
 .sf-menu li {
-	list-style: none
-	width: 100px;
+	list-style: none;
+	/*width: 100px;*/
 	margin-right: 10px;
 }
 
@@ -306,6 +311,33 @@ div.post-head .entry-title{
 
 div.post-head .entry-title a{
 	display: block;
+}
+
+div.post-head a.please-respond {
+  background: #fff;
+  color: red;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  /* box-shadow: 0 1px 1px #000; */
+  border: #fff 2px solid;
+  font-size: 10px;
+  line-height: 8px;
+  font-weight: bold;
+  display: block;
+  margin-left: 50px;
+  margin-top: -5px;
+  padding: 3px;
+  height: 8px;
+  width: 8px;
+  position: absolute;
+  text-align: center;
+}
+
+div.post-head a.please-respond:hover{
+  background: red;
+  color: #fff;
+  text-decoration: none;
 }
 
 div.entry-content{
@@ -475,7 +507,9 @@ div.podPress_content, div.podPress_content div{
 
 div.entry-content caption, div.entry-content th, div.entry-content td {
 	font-weight: inherit;
-	padding: 0;
+	padding: 3px;
+	border: solid #DDDDDD;
+	border-width: 1px 1px 0 0;
 }
 
 div.entry-content embed,
@@ -499,6 +533,39 @@ div.entry-content li object{
 	font-size:10px;
 	position:relative;
 	top:-1px;
+}
+
+/* ---------------------------------------------------------------- LTR/RTL */
+
+div.category-ltr{
+  text-align: left;
+  direction: ltr;
+}
+
+div.category-rtl{
+  text-align: right;
+  direction: rtl;
+}
+
+/* ---------------------------------------------------------------- 404 */
+
+div.error404{
+  margin-top: 30px;
+}
+
+#error404-searchform{
+  margin: 0  0 0 115px;
+}
+
+/* Wordpress Wiki */
+
+div.type-wiki div.entry-content div {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#wpw_tab_nav{
+  margin: 5px 0;
 }
 
 /* ---------------------------------------------------------------- Comments */
@@ -948,6 +1015,20 @@ div.aside ul li ul li a.stats-link:hover{
 
 .syntaxhighlighter{
   direction: ltr;
+}
+
+div#pj-convo-comment-prompt{
+  font-size: 18px;
+  padding: 5px;
+  background-color: #e5e5e5;
+  font-weight: bold;
+  border: 0;
+  border-top: 1px solid #CCC;
+  color: inherit;
+  top: -50px;
+  z-index: 10;
+  position: relative;
+  margin-bottom: -50px;
 }
 
 /********************************************************* Old stuff starts here */

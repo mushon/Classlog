@@ -90,6 +90,17 @@ add_filter('thematic_postheader_postmeta', 'classlog_postheader_postmeta');
 function classlog_postheader($old){
   $new  = '<div class="post-head">';
   $new .= $old;
+  
+  //Get a prompt from the Conversation starter plugin:
+  global $post;
+	setup_postdata($post);
+  $prompt = get_post_meta($post->ID, prompt, true);
+  //$prompt="test";
+  //embed the quote as a "?" link
+  if($prompt){
+    $new .= '<a href="' . get_comments_link() . '" class="please-respond" title="' . $prompt . '">?</a>';
+  }
+  
   $new .= '</div>';
   
   return $new;
@@ -203,11 +214,42 @@ update_option( 'sidebars_widgets', array(
 
 // Add Slideshare oEmbed
 function add_oembed_slideshare(){
-    wp_oembed_add_provider( 'http://www.slideshare.net/*', 'http://api.embed.ly/v1/api/oembed');
+    wp_oembed_add_provider( 'http://www.slideshare.net/*', 'http://api.embed.ly/v1/api/oembed'); //http://www.slideshare.net/api/oembed/1
 }
 add_action('init','add_oembed_slideshare');
 
 // ----------------------------------------------------------------- Plugins
+
+function script_folding(){
+	//For codebox expansion based on:
+	//http://bavotasan.com/tutorials/using-jquery-to-make-an-expandable-code-box-for-wp-syntax/:
+	 wp_enqueue_script("jquery"); ?>
+	<script type="text/javascript">
+	jQuery(document).ready(function(){
+		jQuery(".wp_syntax").hover(function() {
+		var width = jQuery("table", this).width();
+		var pad = width + 5;
+		if (width > 475) {
+			jQuery(this)
+				.stop(true, false)
+				.css({
+					zIndex: "100",
+					position: "relative"
+				})
+				.animate({
+					width: pad + "px"
+				});
+			}
+		}, function() {
+				jQuery(this).stop(true, false).animate({
+					width: 475
+			});
+		});
+	});
+	</script>
+<?php }
+
+add_filter('thematic_belowmainasides', 'script_folding');
 
 // -------------------------------------------------------- Gravatared Posts
 

@@ -27,7 +27,7 @@ h2 {
 }
 
 blockquote {
-  font-family:auto;
+  /* font-family:auto; */
   font-size:1.2em;
 }
 
@@ -117,6 +117,11 @@ div.post-head .entry-title {
 	float:left;
 }
 
+div.post-head a.please-respond {
+  margin-right: 50px;
+  margin-left: auto;
+}
+
 div.entry-content {
 	float:left;
 	margin-right: 10px;
@@ -202,6 +207,12 @@ div.entry-utility .comfeed-link a {
 /*for podcasts video*/
 
 /* Similar Posts */
+
+/* ---------------------------------------------------------------- 404 */
+
+#error404-searchform{
+  margin: 0 115px 0 0;
+}
 
 /* ---------------------------------------------------------------- Comments */
 

@@ -30,6 +30,10 @@ div#comments .children li.depth-3 {
   background-position:92.5% 0;
 }
 
+caption, th, td {
+	font-weight:normal;
+	text-align:right;
+}
 
 /* Shadowbox hack */
 #sb-body img {
