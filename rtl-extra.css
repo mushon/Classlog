@@ -39,3 +39,14 @@ caption, th, td {
 #sb-body img {
   margin-right:-100%;
 }
+
+/* gist.github.com hack */
+.gist .gist-file .gist-meta {
+  text-align: left;
+  direction: ltr;
+}
+
+div.entry-content div.gist,
+div.entry-content div.gist div{
+  margin: 0;
+}
